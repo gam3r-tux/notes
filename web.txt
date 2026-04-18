@@ -1,0 +1,105 @@
+https://www.hostinger.com/tutorials/how-to-build-site-with-gemini
+
+https://aistudio.google.com/apps/809caf0a-3e32-4032-bf0c-e64ec603305e?_gl=1*1xfm4eg*_up*MQ..&gclid=CjwKCAjw14zPBhAuEiwAP3-Eb3atBi4PF5rs0oC8hhJKmIUhRn9jThJQjKFEnC276nGMXLZjhSF_nBoC1pYQAvD_BwE&gbraid=0AAAAACn9t64TmWnNxn7SOf7uVXara8WXg&showAssistant=true&appParams=contacto&showCode=true
+
+https://www.msn.com/es-mx/noticias/mexico/qu%C3%A9-avena-comprar-profeco-se%C3%B1ala-cu%C3%A1l-es-la-mejor-marca-en-m%C3%A9xico/ar-AA206WN2?ocid=winp2fptaskbar&cvid=3464d339cadd4dddb5a7d4049d35ad44&ei=25
+
+https://www.msn.com/es-mx/dinero/noticias/cu%C3%A1l-es-la-cantidad-recomendable-que-debes-tener-en-tu-afore-al-jubilarte/ar-AA20NN1d?ocid=winp2fptaskbar&cvid=2b0e09765c794a1bf943d41774c8ecfd&ei=5
+
+https://www.msn.com/es-mx/dinero/noticias/cu%C3%A1nto-necesito-en-mi-afore-para-recibir-una-pensi%C3%B3n-de-20-mil-pesos-al-mes/ar-AA20C9Xn?ocid=msedgdhp&pc=U531&cvid=69e3bfa16478496a8e5298df81ad6cd4&ei=36
+
+https://www.msn.com/es-mx/recetas/noticias/estos-5-medicamentos-para-la-presi%C3%B3n-arterial-ya-no-son-recomendados-por-los-m%C3%A9dicos/ar-AA1XBxPJ?ocid=winp2fptaskbar&cvid=69e3bfcfb4bd4002a8bb8a3a4b7e3b4d&ei=5
+
+https://www.msn.com/es-mx/noticias/other/cu%C3%A1l-es-el-cereal-m%C3%A1s-saludable-en-m%C3%A9xico-profeco-responde/ar-AA20MYxi?ocid=msedgdhp&pc=U531&cvid=69e3bfa16478496a8e5298df81ad6cd4&cvpid=efe9fca6de354681ee836ffefcad2fa2&ei=6
+
+
+rocky@192.168.56.2
+
+
+hostnamectl
+
+cat /etc/os-realease
+
+ip addr show
+
+df -h
+
+
+---- install web server
+
+sudo dnf install nginx -y
+
+-- enable web service
+
+sudo systemctl enable --now gnix
+
+systemctl status nginx
+
+ps -ef | nginx
+
+
+sudo dnf install epel-release -y
+
+sudo dnf install fastfetch -y
+
+fastfetch
+
+sudo firewall-cmd --add-service http --permanent
+
+sudo firewall-cmd --reload
+
+sudo firewall-cmd --list-all
+
+
+The primary Linux command for checking free disk space is df (disk free). To identify what is consuming space in specific folders, you use du (disk usage). 
+Opensource.com
+Opensource.com
+ +3
+1. df (Check Overall Free Space) 
+The df command reports the amount of available and used disk space on all mounted filesystems. 
+Elementor
+Elementor
+ +1
+df -h: Displays the information in "human-readable" format (GB, MB).
+df -T: Adds a column showing the filesystem type (e.g., ext4, xfs).
+df .: Shows free space for only the partition containing the current directory. 
+Opensource.com
+Opensource.com
+ +5
+2. du (Check Directory and File Usage) 
+While df shows partition totals, du helps find the specific directories or files taking up that space. 
+Contabo
+Contabo
+ +1
+du -sh: Provides a summary of the total size for the current directory in human-readable format.
+du -h --max-depth=1: Shows the size of all subdirectories exactly one level deep.
+du -sh * | sort -h: Lists and sorts all items in the current directory by size, from smallest to largest. 
+KodeKloud
+KodeKloud
+ +4
+3. lsblk (Check Physical Drives and Partitions) 
+The lsblk command provides a tree-like view of all block devices (disks and partitions), including their total size and mount points. 
+Contabo
+Contabo
+ +1
+lsblk -f: Displays filesystems, UUIDs, and mount points alongside physical disk data. 
+Hostinger
+Hostinger
+ +1
+4. ncdu (Interactive Disk Analysis) 
+For a visual, navigable experience in the terminal, use ncdu (NCurses Disk Usage). 
+DEV Community
+DEV Community
+ +1
+ncdu /: Scans the entire system and provides an interactive list where you can use arrow keys to browse and find large folders.
+Note: This tool often requires installation via sudo apt install ncdu or sudo yum install ncdu. 
+Elementor
+Elementor
+ +2
+
+
+Copiar archivo
+
+scp pic* webmaster@192.168.56.2:~/home/webmaster
+
+
