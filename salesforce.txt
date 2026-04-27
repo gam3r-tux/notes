@@ -1,0 +1,131 @@
+Salesforce CRM
+
+
+Salesforce Developer Roadmap para Java Developer
+Fase 0
+Fundamentos de la plataforma Salesforce
+Antes de code: entender el modelo de datos y la plataforma. ~2–3 semanas.
+
+Conceptos clave
+Salesforce Platform
+Org Model
+Objects & Fields
+Relationships (Lookup / MD)
+SOQL basics
+App Builder / Setup
+🎯 Recurso: Trailhead — Salesforce Platform Basics + Data Modeling
+Explorar modelo de datos ↗
+↓
+Fase 1
+Apex — el Java de Salesforce
+Como Java developer, esto es tu zona de confort. La sintaxis es muy similar. ~3–4 semanas.
+
+Lo que ya sabes → equivalente en Apex
+Clases & Interfaces → igual
+Collections (List, Set, Map)
+Excepciones → DmlException
+Generics → tipado fuerte
+Lo nuevo para aprender
+Governor Limits
+Bulkification patterns
+DML operations
+SOQL / SOSL
+Apex Triggers
+Async Apex (Batch, Queueable, Future)
+Test classes (@isTest)
+🎯 Trailhead: Apex Basics & Database · Apex Triggers · Asynchronous Apex
+¿Qué son los Governor Limits? ↗
+↓
+Fase 2
+Frontend — Lightning Web Components (LWC)
+El equivalente a React/Angular dentro de Salesforce. ~3–4 semanas.
+
+Stack
+HTML Templates
+JavaScript (ES6+)
+CSS Salesforce
+Wire Service
+@api / @track / @wire
+Component Lifecycle
+Events & Communication
+Lightning Data Service (LDS)
+🎯 Trailhead: Lightning Web Components Basics · LWC Specialist Superbadge
+LWC vs React ↗
+↓
+Fase 3
+Integraciones & APIs
+Aquí tu experiencia Java en backends e integraciones te da gran ventaja. ~2–3 semanas.
+
+Tecnologías
+REST API (JSON)
+SOAP API (WSDL)
+Bulk API 2.0
+Streaming API
+Named Credentials
+Callouts desde Apex
+Platform Events
+Change Data Capture
+🎯 Trailhead: Integration Architecture · Platform Events Basics
+Integraciones en Salesforce ↗
+↓
+Fase 4
+Herramientas de desarrollo profesional
+El toolchain que usarás en proyectos reales. ~1–2 semanas.
+
+Salesforce CLI (sf)
+VS Code + SF Extension Pack
+Scratch Orgs
+Sandboxes
+SFDX / Metadata API
+Git + Source Control
+Deployment (Change Sets / CI-CD)
+Postman para Salesforce APIs
+🎯 Trailhead: Salesforce DX · DevOps Center
+↓
+Certificaciones recomendadas
+Ruta sugerida para devs
+1️⃣ Platform Developer I (PDI) — base fundamental. Por aquí empieza todo dev.
+2️⃣ Platform Developer II (PDII) — avanzado: patterns, LWC, integraciones complejas.
+3️⃣ JavaScript Developer I — si quieres enfocarte en LWC / frontend.
+4️⃣ Integration Architecture Designer — para el track de arquitecto.
+Preparar certificación PDI ↗
+⏱ Tiempo total estimado (estudio consistente): 4–6 meses para estar listo para PDI. Como Java dev, las fases 0 y 1 te tomarán menos tiempo del promedio.
+
+
+Aquí tienes el roadmap completo. Algunas notas importantes dado tu background en Java:
+
+**Tu ventaja principal está en Fase 1 (Apex).** La sintaxis de Apex es deliberadamente similar a Java — clases, interfaces, colecciones, excepciones, tipado fuerte. Lo que te costará más no es la sintaxis sino el cambio de mentalidad: en Salesforce existe un sistema de *Governor Limits* que limita cuántas operaciones puedes hacer por transacción (máximo 100 queries SOQL, 150 DML statements, etc.). Esto obliga a escribir código "en bulto" (*bulkification*), que es el patrón más importante que debes dominar.
+
+**Trailhead es el recurso #1.** La plataforma de aprendizaje oficial de Salesforce (trailhead.salesforce.com) es gratuita, gamificada y tiene entornos reales para practicar. Es el equivalente a la documentación oficial pero interactiva.
+
+**Orden sugerido de recursos:**
+- Empieza con un **Developer Org gratuita** (signup en developer.salesforce.com)
+- Completa los trails de Trailhead en el orden del roadmap
+- Practica con **Scratch Orgs** desde VS Code cuando llegues a la fase de herramientas
+- Para la certificación PDI, usa los exámenes de práctica oficiales y los trails específicos de preparación
+
+¿Quieres que profundice en alguna de las fases, en cómo funcionan los Governor Limits, o en cómo preparar el examen PDI?
+
+
+
+
+https://www.youtube.com/watch?v=WsS_CtTRzwQ&list=PLaGX-30v1lh0OHQUo1qMnUG_3gzpwG4W-
+
+https://www.youtube.com/watch?v=68X85SxAU1g&list=PLaGX-30v1lh1e8roeCUumUEel5ukdPubj
+
+https://www.youtube.com/watch?v=RwrA6Y7Bvf0&list=PL-gW8Fj5TGro_a8irvZUZUKJdEpWIGMB8
+
+https://www.youtube.com/@CodingWithTheForce
+
+
+
+Buscar en  Google fotos personales
+
+index.of.dcim
+
+
+
+OpenStack (Nube para pruebas)
+
+
+https://claw.mobile/blog/mcp-with-openclaw
